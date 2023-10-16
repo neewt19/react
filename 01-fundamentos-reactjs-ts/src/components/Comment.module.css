@@ -1,0 +1,90 @@
+.comment {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.imagem {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.commentBox {
+    flex: 1;
+}
+
+.commentContent {
+    border-radius: 9px;
+    background: var(--gray-700);
+    padding: 1rem;
+}
+
+.commentContent p {
+    margin-top: 1rem;
+    color: var(--gray-300);
+}
+
+.commentContent header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header strong {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+header time {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--gray-400);
+    font-weight: 400;
+}
+
+header button {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    color: var(--gray-400);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+
+    transition: 0.5s;
+}
+
+header button:hover {
+    color: var(--red-500);
+}
+
+.commentBox footer {
+    margin-top: 1rem;
+}
+
+footer button {
+    background: transparent;
+    border: none;
+    color: var(--gray-400);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer button:hover {
+    color: var(--green-300);
+}
+
+footer button svg {
+    margin-right: 0.5rem;
+}
+
+footer button span::before {
+    padding: 0 0.25rem;
+    content: "\2022";
+}

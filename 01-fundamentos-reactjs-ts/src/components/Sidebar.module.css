@@ -1,0 +1,59 @@
+.sidebar{
+    background: var(--gray-800);
+    border-radius: 8px;
+    overflow: hidden; /* faz com que os elementos dentro da sidebar ocupem só o espaço dela*/
+}
+.cover{
+    width: 100%;
+    height: 72px;
+    object-fit: cover;/* faz com que a imagem não fique distocida e sim que corte ela*/
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(0px - 1.5rem - 6px);
+}
+.profile strong{
+    margin-top: 1rem;
+    color: var(--gray-100);
+    font-size: 1rem;
+}
+.profile span{
+    font-size: 0.875rem;
+}
+.avatar{
+    /*box-sizing:initial;  faria que as bordas não comprimissem a imagem*/
+    width:  calc(3rem + 12px);/*usei o calculo para botar a medida da borda sem afetar a imagem(funcionaria com o box-sizing também)*/
+    height: calc(3rem + 12px);
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500); /*faz com que a borda ganhe outra borda*/
+}
+.sidebar footer{
+    border-top: 1px solid var(--gray-600);
+    margin-top: 1.5rem;
+    padding: 2rem;
+    display: flex;
+}
+.sidebar footer a{
+    width: 100%;
+    background: transparent;
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+    height: 50px;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar footer a:hover{
+    color: var(--white);
+    background:var(--green-500);
+    transition: 0.2s;
+}

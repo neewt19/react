@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 736px;
+    min-height: 72px;
+    max-height: max-content;
+    background-color: #262626;
+    border-radius: 8px;
+    margin-top: 24px;
+    padding: 16px;
+    gap: 14px;
+    margin-bottom: 15px;
+}
+
+.check {
+    content: '\2714';
+    width: 1.1rem;
+    height: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: transparent;
+    border: 2px solid #4EA8DE;
+    cursor: pointer;
+}
+
+.checkBox label input {
+    display: none;
+}
+
+.checkBox label input:checked+.check {
+    background-color: #4EA8DE;
+    color: #ffffff;
+}
+
+
+.checkBox label input:checked+.check+span {
+    color: rgb(95, 95, 95);
+    text-decoration: line-through;
+}
+
+.checkBox {
+    gap: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .checkBox label input::before {
+    content: '\2714';
+    width: 1.1rem;
+    height: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: transparent;
+    border: 2px solid #4EA8DE;
+    cursor: pointer;
+}
+
+.checkBox label input:checked::after {
+    background-color: #4EA8DE;
+    color: #ffffff;
+} */
+
+.container label {
+    color: #F2F2F2;
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.tasksContent {
+    width: 632px;
+    height: 40px;
+}
+
+.deleteTaskButton {
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #808080;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.deleteTaskButton:hover {
+    color: rgb(189, 71, 71);
+}
+
+.checkMark {
+    width: 1.1rem;
+    height: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: transparent;
+    border: 2px solid #4EA8DE;
+    cursor: pointer;
+}
+
+.checkBox label input:checked+.checkMark {
+    background-color: #4EA8DE;
+    color: #ffffff;
+}

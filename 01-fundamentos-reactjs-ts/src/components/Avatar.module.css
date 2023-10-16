@@ -1,0 +1,16 @@
+.avatar{
+    /*box-sizing:initial;  faria que as bordas não comprimissem a imagem*/
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+.avatarWithBorder{
+    /*box-sizing:initial;  faria que as bordas não comprimissem a imagem*/
+    width:  calc(3rem + 12px);/*usei o calculo para botar a medida da borda sem afetar a imagem(funcionaria com o box-sizing também)*/
+    height: calc(3rem + 12px);
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500); /*faz com que a borda ganhe outra borda*/
+}
